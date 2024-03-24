@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="styles.css">
+   <title>Introduction to JavaScript Functions</title> 
+</head>
+
+<nav class="navbar" id="navbar">
+<header>
+  Navbar
+</header>
+<a href="#Overview" class="nav-link">Overview</a>
+<a href="#Function_Syntax" class="nav-link">Function Syntax</a>
+<a href="#Invocation" class="nav-link">Invocation</a>
+<a href="#Anonymous_Functions" class="nav-link">Anonymous Functions</a>
+<a href="#Function_Parameters_and_Arguments" class="nav-link">Function Parameters and Arguments</a><a href="#Return_Statement" class="nav-link">Return Statement</a><a href="#Error_Handling" class="nav-link">Error Handling</a><a href="#Conclusion" class="nav-link">Conclusion</a>
+  </nav>
+
+  <main id="main-doc">
+<header> <h1>
+Introduction to JavaScript Functions
+  </h1> </header>
+
+        <section class="main-section" id="Overview">
+    <header> <h2>Overview</h2> </header>
+<p>
+JavaScript functions are essential building blocks in web development. They allow you to encapsulate a set of statements into a reusable code block, providing modularity and abstraction in your programs. This documentation will guide you through the fundamentals of JavaScript functions, including their syntax, usage, and best practices.</p>
+    </section> 
+    
+    
+    <section class="main-section" id="Function_Syntax">
+<header> <h2>
+  Function Syntax
+ </h2> </header>
+ <header> Declaration 
+  </header>
+<p>A function in JavaScript can be declared using the function keyword followed by the function name and parameters enclosed within parentheses. For example:
+</p>
+<code>function greet(name) {
+    return "Hello, " + name + "!";
+}
+</code>
+    </section> 
+    
+    <section class="main-section" id="Invocation">
+<header>
+Invocation</header>
+<p>To execute a function, you simply invoke it by writing its name followed by parentheses containing any required arguments. For instance:
+</p>
+    </section> 
+    
+    <section class="main-section" id="Anonymous_Functions">
+<header>Anonymous Functions</header>
+<p>Anonymous functions are functions without a name. They are commonly used as callback functions or as arguments to other functions. Here's an example:</p>
+<code>var multiply = function(x, y) {
+    return x * y;
+};
+
+console.log(multiply(3, 4)); // Output: 12
+</code>
+    </section> 
+    
+    <section class="main-section" id="Function_Parameters_and_Arguments">
+<header>Function Parameters and Arguments</header>
+<p>Functions in JavaScript can accept parameters, which act as placeholders for values passed during function invocation. Parameters are defined within the function parentheses. For instance:
+</p>
+<code>function add(x, y) {
+    return x + y;
+}</code>
+<p>In this example, x and y are parameters. When you invoke the function add(3, 5), 3 and 5 are the arguments passed to x and y respectively.
+</p>
+    </section>
+
+    <section class="main-section" id="Return_Statement">
+<header>Return Statement</header>
+  <p>Functions can return a value using the return statement. Once a return statement is encountered, the function execution stops, and the value is returned to the caller. Here's an example:
+</p>
+<code>function subtract(x, y) {
+    return x - y;
+}
+
+var result = subtract(10, 4);
+console.log(result); // Output: 6
+</code>
+      </section>
+    
+    <section class="main-section" id="Error_Handling" >
+  <header>Error Handling</header>
+  <p>Error handling in JavaScript is crucial for maintaining robust and reliable applications. JavaScript provides several mechanisms for handling errors, such as try...catch statements and throwing custom errors.</p>
+  <p>By using try...catch statements, you can gracefully handle exceptions that may occur during the execution of your code. Additionally, you can throw custom errors using the throw keyword, allowing you to define and propagate your own error types.</p>
+  <ul>
+    <li>Use try...catch statements to wrap code that may throw exceptions.</li>
+    <li>Throw custom errors using the throw keyword followed by an Error object.</li>
+    <li>Handle different types of errors by catching specific error instances.</li>
+    <li>Use the finally block to execute cleanup code regardless of whether an exception occurs.</li>
+    <li>Consider using error logging libraries to track and monitor errors in production environments.</li>
+    <li>Regularly review and update error handling code to address new use cases and improve application stability.</li>
+  </ul>
+  <code>
+    try {
+      // Code that may throw an exception
+    } catch (error) {
+      // Handle the error
+      console.error('An error occurred:', error.message);
+    }
+  </code>
+</section>
+
+<section class="main-section" id="Conclusion">
+<header>Conclusion</header>
+  <p>JavaScript functions are powerful tools for organizing and reusing code in your applications. By understanding their syntax and usage, you can leverage functions to write cleaner, more maintainable code.
+
+This documentation provides a basic overview of JavaScript functions. Experiment with the examples provided to deepen your understanding, and happy coding!</p>
+</section>
+    </main>
+
+  </html>
